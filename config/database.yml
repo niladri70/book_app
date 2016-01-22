@@ -1,0 +1,8 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  database: book_app_development
+  username: niladri
+  password: 
+  host: localhost
+  port: 3000

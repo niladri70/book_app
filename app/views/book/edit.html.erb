@@ -1,0 +1,26 @@
+<h1>Editing book <h1>
+
+<%#= render 'form' %>
+<%=form_for :book , url: book_path, method: :patch do |f| %>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :author %><br>
+    <%= f.text_field :author %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :comment %><br>
+    <%= f.text_field :comment %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+<%#= link_to 'show',book_path(book) %>
+<%= link_to 'Back',book_index_path %>
